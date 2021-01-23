@@ -40,14 +40,14 @@
               aria-controls="nav-profile" aria-selected="false"
               style="bottom: auto; color:white; margin: 0px 2px 0px 2px;">Manual</a>
             <a class="nav-link bg-danger" id="nav-contact-tab" data-bs-toggle="tab" href="#nav-contact" role="tab"
-              aria-controls="nav-contact" aria-selected="false" style="bottom: auto; color:white;">Info</a>
-
-            <button type="button" class="btn btn-danger mt-2" style="margin: 0px 0px 0px 26px;">Stop</button>
-
+              aria-controls="nav-contact" aria-selected="false" style="bottom: auto; color:white; margin: 0px 2px 0px 0px;">Info</a>
+            <a class="nav-link bg-danger" id="nav-stop-tab" data-bs-toggle="tab" href="#nav-stop" role="tab"
+              aria-controls="nav-stop" aria-selected="false" style="bottom: auto; color:white;">Stop</a>
           </div>
         </div>
       </div>
     </nav>
+
     <div class="tab-content" id="nav-tabContent" style="margin-right: 0.5cm; margin-left: 0.5cm;">
 
       <!-- pestaña automatica -->
@@ -114,6 +114,11 @@
 
       <!-- pestaña manual  -->
       <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+        <div class="row">
+          <div class="col" style="margin: 0px 2px 0px 2px;">
+            Seleccionar el método de terapia con el cual desea iniciar
+          </div>
+        </div>
         <div class="card text-black bg-light mb-3 mt-2" style="max-width: 100%; max-height: 100%;">
           <div class="card-header mt-1">
             <div class="row">
