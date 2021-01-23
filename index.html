@@ -62,7 +62,7 @@
               <option value="3">Three</option>
             </select>
 
-            <select class="form-select" aria-label="Default select example " style="margin-top: 0.2cm;">
+            <select class="form-select" aria-label="Default select example " style="margin-top: 0.2cm;" disabled>
               <option selected>Modo</option>
               <option value="1">one</option>
               <option value="2">Two</option>
@@ -97,6 +97,16 @@
               <option value="4">55°C</option>
               <option value="5">60°C</option>
             </select>
+
+            <select class="form-select" aria-label="Default select example " style="margin-top: 0.2cm;" disabled>
+              <option selected>Seleccione el tiempo</option>
+              <option value="1">2 min</option>
+              <option value="2">4 min</option>
+              <option value="3">6 min</option>
+              <option value="4">8 min</option>
+              <option value="5">10 min</option>
+            </select>
+
           </div>
 
           <div class="card-header">Datos</div>
@@ -114,8 +124,8 @@
 
       <!-- pestaña manual  -->
       <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-        <div class="alert alert-danger alert-dismissible fade show mt-2" role="alert">
-          <strong>Seleccione</strong> el metodo de terapia con el cual desea iniciar
+        <div class="alert alert-danger alert-dismissible fade show mt-2" role="alert" style="margin: 0px 2px 0px 2px;">
+          <strong>Seleccione</strong> el método de terapia con el cual desea iniciar
           <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
         <div class="card text-black bg-light mb-3 mt-2" style="max-width: 100%; max-height: 100%;">
