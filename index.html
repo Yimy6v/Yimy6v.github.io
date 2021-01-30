@@ -40,9 +40,8 @@
               aria-controls="nav-profile" aria-selected="false"
               style="bottom: auto; color:white; margin: 0px 2px 0px 2px;">Manual</a>-->
             <a class="nav-link bg-danger" id="nav-contact-tab" data-bs-toggle="tab" href="#nav-contact" role="tab"
-              aria-controls="nav-contact" aria-selected="false" style="bottom: auto; color:white; margin: 0px 2px 0px 0px;">Info</a>
-            <a class="nav-link bg-danger" id="nav-stop-tab" data-bs-toggle="tab" href="#nav-stop" role="tab"
-              aria-controls="nav-stop" aria-selected="false" style="bottom: auto; color:white;">Stop</a>
+              aria-controls="nav-contact" aria-selected="false"
+              style="bottom: auto; color:white; margin: 0px 2px 0px 2px;">Info</a>
           </div>
         </div>
       </div>
@@ -53,17 +52,24 @@
       <!-- pestaña automatica -->
       <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
         <div class="card text-black bg-light mb-3 mt-2" style="max-width: 100%; max-height: 100%;">
-          
+
           <div class="card-header mt-1">Diagnóstico</div>
           <div class="card-body">
-            <select class="form-select" aria-label="Default select example">
+            <select class="form-select" aria-label="Default select example" style="margin-top: 0.2cm;">
               <option selected>Falencia</option>
               <option value="1">Torticolis</option>
               <option value="2">two</option>
               <option value="3">Three</option>
             </select>
+
+            <select class="form-select" aria-label="Default select example" style="margin-top: 0.2cm;">
+              <option selected>Tipo de tratamiento</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
           </div>
-          
+
           <div class="card-header mt-1">Electrodos</div>
           <div class="card-body">
 
@@ -117,8 +123,15 @@
           <div class="card-header">Datos</div>
           <div class="card-body">
             <div class="row">
-              <div class="d-grid gap-2 col-6 mx-auto">
-                <a href="#" class="btn btn-danger">Enviar</a>
+              <div class="col">
+                <div class="d-grid gap-2 col-6 mx-auto">
+                  <a href="#" class="btn btn-danger">Enviar</a>
+                </div>
+              </div>
+              <div class="col">
+                <div class="d-grid gap-2 col-6 mx-auto">
+                  <a href="#" class="btn btn-danger">Stop</a>
+                </div>
               </div>
             </div>
           </div>
@@ -134,7 +147,7 @@
           <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
         <div class="card text-black bg-light mb-3 mt-2" style="max-width: 100%; max-height: 100%;">
-          
+
           <div class="card-header mt-1">Diagnóstico</div>
           <div class="card-body">
             <select class="form-select" aria-label="Default select example">
@@ -144,7 +157,7 @@
               <option value="3">Three</option>
             </select>
           </div>
-          
+
           <div class="card-header mt-1">
             <div class="row">
               <div class="col-6">Electrodos</div>
@@ -234,7 +247,28 @@
         <div class="card text-black bg-light mb-3 mt-2" style="max-width: 100%; max-height: 100%;">
           <div class="card-header mt-1">Instruciones</div>
           <div class="card-body">
-            .......
+            <p>La aplicacion para el manejo automático del prototipo biomédico para terapias paliativas
+              comunes de cuello cuenta con 2 pesteñas:</p>
+
+            <ul>
+              <li>Automático</li>
+              <li>Info</li>
+            </ul>
+
+            <p>En la pestaña automático se encuentran 4 secciones:</p>
+
+            <ul>
+              <li>Sección de Diagnóstico: En esta sección se seleciona la falencia y el tipo de tratamiento</li>
+              <li>Sección de Electrodos: En esta sección se asiganara de manera automatica el modo, tiempo
+                e intensidad con los cuales los electrodos se activaran dependiendo de los datos seleccionados
+                en sección de Diagnóstico.</li>
+              <li>Sección de temperatura: En esta sección se asignaran de manera automatica los valores de
+                temperatura y tiempo con los cuales la manta termica se activara dependiendo del los datos seleccionados
+                en la sección de Diagnóstico.</li>
+              <li>Sección de datos: Esta sección cuenta con un boton de envio de datos para empezar la terapia
+                paliativa para tratar el Diagnóstico seleccionado y un boton de stop para deterner la terapia en caso de emergencia. </li>
+            </ul>
+
           </div>
         </div>
       </div>
