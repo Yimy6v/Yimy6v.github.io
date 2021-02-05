@@ -29,152 +29,122 @@
   </header>
 
   <section id="tratamiento">
-    <nav>
-      <div class="row">
-        <div class="col">
-          <div class="nav nav-tabs" id="nav-tab" role="tablist"
-            style="padding-top: 0.2cm; margin-left: 0.5cm; margin-right: 0.5cm;">
+	  <nav>
+		  <div class="container-fluid">
 
-            <a class="nav-link active bg-danger" id="nav-home-tab" data-bs-toggle="tab" href="#nav-home" role="tab"
-              aria-controls="nav-home" aria-selected="true" style="bottom: auto; color:white;">Automático</a>
+			  <div class="row">
+				  <div class="col">
 
-            <a class="nav-link bg-danger" id="nav-contact-tab" data-bs-toggle="tab" href="#nav-contact" role="tab"
-              aria-controls="nav-contact" aria-selected="false"
-              style="bottom: auto; color:white; margin: 0px 2px 0px 2px;">Info</a>
+					  <div class="nav nav-tabs" id="nav-tab" role="tablist" style="padding-top: 0.2cm; margin-right: 0.5cm; margin-left: 0.5cm;">
 
-          </div>
-        </div>
-      </div>
-    </nav>
+						  <a class="nav-link active bg-danger" id="nav-home-tab" data-bs-toggle="tab" href="#nav-home" role="tab"
+							  aria-controls="nav-home" aria-selected="true" style="bottom: auto; color:white;">Automático</a>
 
-    <div class="tab-content" id="nav-tabContent" style="margin-right: 0.5cm; margin-left: 0.5cm;">
+						  <a class="nav-link bg-danger" id="nav-contact-tab" data-bs-toggle="tab" href="#nav-contact" role="tab"
+							  aria-controls="nav-contact" aria-selected="false"
+							  style="bottom: auto; color:white; margin: 0px 2px 0px 2px;">Info</a>
 
-      <!-- pestaña automatica -->
-      <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-        <div class="card text-black bg-light mb-3 mt-2" style="max-width: 100%; max-height: 100%;">
+					  </div>
+				  </div>
+			  </div>
+		  </div>
+	  </nav>
 
-          <div class="card-header mt-1">Diagnóstico</div>
-          <div class="card-body">
-            <select id="selectFalencia" onchange="modificarOpciones()" class="form-select" aria-label="Default select example" style="margin-top: 0.2cm;">
-              <option selected>Falencia</option>
-              <option value="1">Torticolis</option>
-              <option value="2">two</option>
-              <option value="3">Three</option>
-            </select>
+	  <div class="tab-content" id="nav-tabContent" style="margin-right: 0.5cm; margin-left: 0.5cm;">
 
-            <select id="selectTratamiento" class="form-select" aria-label="Default select example" style="margin-top: 0.2cm;">
-              <option selected>Tipo de tratamiento</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-            </select>
-          </div>
+		  <!-- pestaña automatica -->
+		  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+			  <div class="card text-black bg-light mb-3 mt-2">
 
-          <div class="card-header mt-1">Electrodos</div>
-          <div class="card-body">
+				  <div class="card-header mt-1">Diagnóstico</div>
+				  <div class="card-body">
+					  <select id="selectFalencia" onchange="seleccionarFalencia()" class="form-select" aria-label="Default select example" style="margin-top: 0.2cm;">
+						  <option selected>Seleccione la falencia</option>
+						  <option value="1">Uno</option>
+						  <option value="2">dos</option>
+						  <option value="3">tres</option>
+						  <option value="4">cuatro</option>
+						  <option value="5">cinco</option>
+					  </select>
 
-            <select class="form-select" aria-label="Default select example " style="margin-top: 0.2cm;" disabled>
-              <option selected>Modo</option>
-              <option value="1">one</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
+					  <select id="selectTratamiento" class="form-select" aria-label="Default select example" style="margin-top: 0.2cm;">
+						  <option selected>Seleccione el tipo de tratamiento</option>
+						  <option value="1">uno</option>
+						  <option value="2">dos</option>
+					  </select>
+				  </div>
 
-            <select class="form-select" aria-label="Default select example " style="margin-top: 0.2cm;" disabled>
-              <option selected>Tiempo</option>
-              <option value="1">5 min</option>
-              <option value="2">10 min</option>
-              <option value="3">15 min</option>
-            </select>
+				  <div class="card-header mt-1">Electrodos</div>
+				  <div class="card-body">
 
-            <select class="form-select" aria-label="Default select example " style="margin-top: 0.2cm;" disabled>
-              <option selected>Intensidad</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-            </select>
+					  <input type="text" name="modo" id="modo" placeholder="Modo de operación" class="form-control" disabled>
+					  <input type="text" name="tiempoModo" id="tiempoModo" placeholder="Duración" class="form-control mt-2 mb-2" disabled>
+					  <input type="text" name="intensidad" id="intensidad" placeholder="Intensidad" class="form-control" disabled>
 
-          </div>
-          <div class="card-header mt-1">Temperatura</div>
-          <div class="card-body">
+				  </div>
+				  <div class="card-header mt-1">Temperatura</div>
+				  <div class="card-body">
 
-            <select class="form-select" aria-label="Default select example" style="margin-top: 0.02cm;" disabled>
-              <option selected>Temperatura</option>
-              <option value="1">40°C</option>
-              <option value="2">45°C</option>
-              <option value="3">50°C</option>
-              <option value="4">55°C</option>
-              <option value="5">60°C</option>
-            </select>
+					  <input type="text" name="temperatura" id="temperatura" placeholder="Temperatura" class="form-control" disabled>
+					  <input type="text" name="tiempoTemperatura" id="tiempoTemperatura" placeholder="Duración" class="form-control mt-2" disabled>
 
-            <select class="form-select" aria-label="Default select example " style="margin-top: 0.2cm;" disabled>
-              <option selected>Tiempo</option>
-              <option value="1">2 min</option>
-              <option value="2">4 min</option>
-              <option value="3">6 min</option>
-              <option value="4">8 min</option>
-              <option value="5">10 min</option>
-            </select>
+				  </div>
 
-          </div>
+				  <div class="card-header">Datos</div>
+				  <div class="card-body">
+					  <div class="row">
+						  <div class="col">
+							  <div class="d-grid gap-2 col-6 mx-auto" onclick="prueba()">
+								  <a href="#" class="btn btn-danger">Enviar</a>
+							  </div>
+						  </div>
+						  <div class="col">
+							  <div class="d-grid gap-2 col-6 mx-auto">
+								  <a href="#" class="btn btn-danger">Stop</a>
+							  </div>
+						  </div>
+					  </div>
+				  </div>
 
-          <div class="card-header">Datos</div>
-          <div class="card-body">
-            <div class="row">
-              <div class="col">
-                <div class="d-grid gap-2 col-6 mx-auto" onclick="prueba()">
-                  <a href="#" class="btn btn-danger">Enviar</a>
-                </div>
-              </div>
-              <div class="col">
-                <div class="d-grid gap-2 col-6 mx-auto">
-                  <a href="#" class="btn btn-danger">Stop</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-      <!-- fin pestaña automatica  -->
+			  </div>
+		  </div>
+		  <!-- fin pestaña automatica  -->
 
 
-      <!-- pestaña info  -->
-      <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-        <div class="card text-black bg-light mb-3 mt-2" style="max-width: 100%; max-height: 100%;">
-          <div class="card-header mt-1">Instruciones</div>
-          <div class="card-body">
-            <p>La aplicacion para el manejo automático del prototipo biomédico para terapias paliativas
-              comunes de cuello cuenta con 2 pesteñas:</p>
+		  <!-- pestaña info  -->
+		  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+			  <div class="card text-black bg-light mb-3 mt-2" style="max-width: 100%; max-height: 100%;">
+				  <div class="card-header mt-1">Instruciones</div>
+				  <div class="card-body">
+					  <p>La aplicacion para el manejo automático del prototipo biomédico para terapias paliativas
+					  comunes de cuello cuenta con 2 pesteñas:</p>
 
-            <ul>
-              <li>Automático</li>
-              <li>Info</li>
-            </ul>
+					  <ul>
+						  <li>Automático</li>
+						  <li>Info</li>
+					  </ul>
 
-            <p>En la pestaña automático se encuentran 4 secciones:</p>
+					  <p>En la pestaña automático se encuentran 4 secciones:</p>
 
-            <ul>
-              <li>Sección de Diagnóstico: En esta sección se seleciona la falencia y el tipo de tratamiento</li>
-              <li>Sección de Electrodos: En esta sección se asiganara de manera automatica el modo, tiempo
-                e intensidad con los cuales los electrodos se activaran dependiendo de los datos seleccionados
-                en sección de Diagnóstico.</li>
-              <li>Sección de temperatura: En esta sección se asignaran de manera automatica los valores de
-                temperatura y tiempo con los cuales la manta termica se activara dependiendo del los datos seleccionados
-                en la sección de Diagnóstico.</li>
-              <li>Sección de datos: Esta sección cuenta con un boton de envio de datos para empezar la terapia
-                paliativa para tratar el Diagnóstico seleccionado y un boton de stop para deterner la terapia en caso de emergencia. </li>
-            </ul>
+					  <ul>
+						  <li>Sección de Diagnóstico: En esta sección se seleciona la falencia y el tipo de tratamiento</li>
+						  <li>Sección de Electrodos: En esta sección se asiganara de manera automatica el modo, tiempo
+							  e intensidad con los cuales los electrodos se activaran dependiendo de los datos seleccionados
+							  en sección de Diagnóstico.</li>
+						  <li>Sección de temperatura: En esta sección se asignaran de manera automatica los valores de
+							  temperatura y tiempo con los cuales la manta termica se activara dependiendo del los datos seleccionados
+							  en la sección de Diagnóstico.</li>
+						  <li>Sección de datos: Esta sección cuenta con un boton de envio de datos para empezar la terapia
+							  paliativa para tratar el Diagnóstico seleccionado y un boton de stop para deterner la terapia en caso de emergencia. </li>
+					  </ul>
 
-          </div>
-        </div>
-      </div>
-      <!-- fin pestaña info  -->
+				  </div>
+			  </div>
+		  </div>
+		  <!-- fin pestaña info  -->
 
 
-    </div>
+	  </div>
 
 
   </section>

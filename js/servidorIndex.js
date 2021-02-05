@@ -10,28 +10,42 @@ function prueba(){
 	alert("falencia: "+ falencia +"; Tratamiento: "+ tratamiento)
 }
 
-function modificarOpciones(){
-	var falencia = document.getElementById("selectTratamiento").value
-	bootbox.alert({
-		size: "small",
-		title: "Your Title",
-		message: "Your message here…",
-		closeButton: false 
-	})
+function seleccionarFalencia(){
+	var falencia = document.getElementById("selectFalencia").value
 
 	switch(falencia){
-		case 1:
-		
+		case "1":
+			mensajeAlerta("Falencia 1", "Descripcion falencia 1")
 			break;
-		case 2:
+		case "2":
+			mensajeAlerta("Falencia 2", "Descripcion falencia 2")
 			break;
-		case 3:
+		case "3":
+			mensajeAlerta("Falencia 3", "Descripcion falencia 3")
 			break;
-		case 4:
+		case "4":
+			mensajeAlerta("Falencia 4", "Descripcion falencia 4")
 			break;
-		case 5:
+		case "5":
+			mensajeAlerta("Falencia 5", "Descripcion falencia 5")
 			break;
 	}
+}
+
+// Funcion para enviar mensaje de alerta dependiendo su activación
+function mensajeAlerta(titulo, mensaje){
+	bootbox.dialog({ 
+		size: "small",
+		title: titulo,
+		message: mensaje,
+		closeButton: false,
+		buttons: {
+			Aceptar: {
+				label: 'Aceptar',
+				className: 'btn-danger',
+			}
+		}
+	})
 }
 
 function tomaDeDatos() {
