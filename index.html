@@ -59,7 +59,7 @@
 				  <div class="card-header mt-1">Diagnóstico</div>
 				  <div class="card-body">
 					  <select id="selectFalencia" onchange="seleccionarFalencia()" class="form-select" aria-label="Default select example" style="margin-top: 0.2cm;">
-						  <option selected>Seleccione la falencia</option>
+						  <option defaultSelected>Seleccione la falencia</option>
 						  <option value="1">Uno</option>
 						  <option value="2">dos</option>
 						  <option value="3">tres</option>
@@ -67,8 +67,8 @@
 						  <option value="5">cinco</option>
 					  </select>
 
-					  <select id="selectTratamiento" class="form-select" aria-label="Default select example" style="margin-top: 0.2cm;">
-						  <option selected>Seleccione el tipo de tratamiento</option>
+					  <select id="selectTratamiento" class="form-select" onchange="selecionarTratamiento()" aria-label="Default select example" style="margin-top: 0.2cm;">
+						  <option defaultSelected>Seleccione el tipo de tratamiento</option>
 						  <option value="1">uno</option>
 						  <option value="2">dos</option>
 					  </select>
@@ -94,7 +94,7 @@
 				  <div class="card-body">
 					  <div class="row">
 						  <div class="col">
-							  <div class="d-grid gap-2 col-6 mx-auto" onclick="prueba()">
+							  <div class="d-grid gap-2 col-6 mx-auto" onclick="tomaDeDatos()">
 								  <a href="#" class="btn btn-danger">Enviar</a>
 							  </div>
 						  </div>

@@ -1,5 +1,4 @@
 
-//var ip_url = 'http://192.168.43.225/';
 // 192.168.1.17
 // 192.168.0.100
 // var ip_url = 'http://192.168.0.134/';
@@ -10,6 +9,7 @@ function prueba(){
 	alert("falencia: "+ falencia +"; Tratamiento: "+ tratamiento)
 }
 
+// Funcion para desplegar un mensaje de descripción de cada falencia
 function seleccionarFalencia(){
 	var falencia = document.getElementById("selectFalencia").value
 
@@ -32,6 +32,50 @@ function seleccionarFalencia(){
 	}
 }
 
+// Funcion para desplegar un mensaje de descripción de cada Tratamiento
+function selecionarTratamiento(){
+	var falencia = document.getElementById("selectFalencia").value
+	var tratamiento = document.getElementById("selectTratamiento").value
+
+	switch(falencia){
+		case "1":
+			if(tratamiento=='1'){
+				mensajeAlerta("Tratamiento 1", "Tratamiento falencia 1")
+			}else{
+				mensajeAlerta("Tratamiento 2", "Tratamiento falencia 1")
+			}
+			break;
+		case "2":
+			if(tratamiento=='1'){
+				mensajeAlerta("Tratamiento 1", "Tratamiento falencia 2")
+			}else{
+				mensajeAlerta("Tratamiento 2", "Tratamiento falencia 2")
+			}
+			break;
+		case "3":
+			if(tratamiento=='1'){
+				mensajeAlerta("Tratamiento 1", "Tratamiento falencia 3")
+			}else{
+				mensajeAlerta("Tratamiento 2", "Tratamiento falencia 3")
+			}
+			break;
+		case "4":
+			if(tratamiento=='1'){
+				mensajeAlerta("Tratamiento 1", "Tratamiento falencia 4")
+			}else{
+				mensajeAlerta("Tratamiento 2", "Tratamiento falencia 4")
+			}
+			break;
+		case "5":
+			if(tratamiento=='1'){
+				mensajeAlerta("Tratamiento 1", "Tratamiento falencia 5")
+			}else{
+				mensajeAlerta("Tratamiento 2", "Tratamiento falencia 5")
+			}
+			break;
+	}
+}
+
 // Funcion para enviar mensaje de alerta dependiendo su activación
 function mensajeAlerta(titulo, mensaje){
 	bootbox.dialog({ 
@@ -48,46 +92,18 @@ function mensajeAlerta(titulo, mensaje){
 	})
 }
 
+// Toma los datos de los respectivos select
 function tomaDeDatos() {
+	var ip_url = 'http://192.168.43.86/';
 
-	var dato = document.getElementById('dato').value;
-	document.getElementById('dato').value = '';
-	switch (dato) {
-		case 'w':    // movimiento del carro ******************************************************
-			console.log('Delante: ' + dato);
-			envioDeDatos(ip_url, 'datos=' + dato);
-			break;
-		case 's':
-			console.log('Atras: ' + dato);
-			envioDeDatos(ip_url, 'datos=' + dato);
-			break;
-		case 'a':
-			console.log('Izquierda: ' + dato);
-			envioDeDatos(ip_url, 'datos=' + dato);
-			break;
-		case 'd':
-			console.log('Derecha: ' + dato);
-			envioDeDatos(ip_url, 'datos=' + dato);
-			break;
-		case 'p':    // movimiento de la cámara   *************************************************
-			console.log('mDerecha: ' + dato);
-			envioDeDatos(ip_url, 'datos=' + dato);
-			break;
-		case 'l':
-			console.log('mIzquierda: ' + dato);
-			envioDeDatos(ip_url, 'datos=' + dato);
-			break;
-		case 'o':
-			console.log('mDetener: ' + dato);
-			envioDeDatos(ip_url, 'datos=' + dato);
-			break;
+	var falencia = document.getElementById("selectFalencia").value
+	var tratamiento = document.getElementById("selectTratamiento").value
 
-		default:
-			alert("El caracter [" + dato + "] no es un dato válido.\nRecomendación: Revisar la ayuda.")
-			break;
-	}
+	envioDeDatos(ip_url, falencia+tratamiento)
+	console.log(falencia+tratamiento)
 }
 
+// Envia los datos al ESP8266
 function envioDeDatos(ip_url, dato) {  // eviar datos servidor
 	var xhttp = new XMLHttpRequest();
 	xhttp.open("GET", ip_url + dato, true);
