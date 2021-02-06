@@ -61,16 +61,16 @@
 					  <select id="selectFalencia" onchange="seleccionarFalencia()" class="form-select" aria-label="Default select example" style="margin-top: 0.2cm;">
 						  <option defaultSelected>Seleccione la falencia</option>
 						  <option value="1">Uno</option>
-						  <option value="2">dos</option>
-						  <option value="3">tres</option>
-						  <option value="4">cuatro</option>
-						  <option value="5">cinco</option>
+						  <option value="2">Dos</option>
+						  <option value="3">Tres</option>
+						  <option value="4">Cuatro</option>
+						  <option value="5">Cinco</option>
 					  </select>
 
-					  <select id="selectTratamiento" class="form-select" onchange="selecionarTratamiento()" aria-label="Default select example" style="margin-top: 0.2cm;">
+					  <select disabled id="selectTratamiento" class="form-select" onchange="selecionarTratamiento()" aria-label="Default select example" style="margin-top: 0.2cm;">
 						  <option defaultSelected>Seleccione el tipo de tratamiento</option>
-						  <option value="1">uno</option>
-						  <option value="2">dos</option>
+						  <option value="1">Uno</option>
+						  <option value="2">Dos</option>
 					  </select>
 				  </div>
 
@@ -78,7 +78,7 @@
 				  <div class="card-body">
 
 					  <input type="text" name="modo" id="modo" placeholder="Modo de operación" class="form-control" disabled>
-					  <input type="text" name="tiempoModo" id="tiempoModo" placeholder="Duración" class="form-control mt-2 mb-2" disabled>
+					  <input type="text" name="tiempoModo" id="tiempoModo" placeholder="Duración = hh:mm:ss" class="form-control mt-2 mb-2" disabled>
 					  <input type="text" name="intensidad" id="intensidad" placeholder="Intensidad" class="form-control" disabled>
 
 				  </div>
@@ -86,7 +86,7 @@
 				  <div class="card-body">
 
 					  <input type="text" name="temperatura" id="temperatura" placeholder="Temperatura" class="form-control" disabled>
-					  <input type="text" name="tiempoTemperatura" id="tiempoTemperatura" placeholder="Duración" class="form-control mt-2" disabled>
+					  <input type="text" name="tiempoTemperatura" id="tiempoTemperatura" placeholder="Duración = hh:mm:ss" class="form-control mt-2" disabled>
 
 				  </div>
 
@@ -116,26 +116,26 @@
 			  <div class="card text-black bg-light mb-3 mt-2" style="max-width: 100%; max-height: 100%;">
 				  <div class="card-header mt-1">Instruciones</div>
 				  <div class="card-body">
-					  <p>La aplicacion para el manejo automático del prototipo biomédico para terapias paliativas
+					  <p>La aplicación para el manejo automático del prototipo biomédico para terapias paliativas
 					  comunes de cuello cuenta con 2 pesteñas:</p>
 
 					  <ul>
-						  <li>Automático</li>
-						  <li>Info</li>
+						  <li><strong>Automático</strong></li>
+						  <li><strong>Info</strong></li>
 					  </ul>
 
 					  <p>En la pestaña automático se encuentran 4 secciones:</p>
 
 					  <ul>
-						  <li>Sección de Diagnóstico: En esta sección se seleciona la falencia y el tipo de tratamiento</li>
-						  <li>Sección de Electrodos: En esta sección se asiganara de manera automatica el modo, tiempo
-							  e intensidad con los cuales los electrodos se activaran dependiendo de los datos seleccionados
+						  <li><strong>Sección de Diagnóstico:</strong> En ésta sección se seleciona la falencia de 5 preconfiguradas y el tipo de tratamiento de 2 preconfigurados</li>
+						  <li><strong>Sección de Electrodos:</strong> En esta sección se asiganará de manera automatica los valores tanto del modo de operación, tiempo 
+							  e intensidad de los electrodos con los cuales estos funcionarán dependiendo de la falencia y tratamiento seleccionados
 							  en sección de Diagnóstico.</li>
-						  <li>Sección de temperatura: En esta sección se asignaran de manera automatica los valores de
-							  temperatura y tiempo con los cuales la manta termica se activara dependiendo del los datos seleccionados
+						  <li><strong>Sección de temperatura:</strong> En esta sección se asignarán de manera automática los valores de
+							  temperatura y tiempo con los cuales la manta termica funcionará dependiendo de la falencia y tratamiento seleccionados
 							  en la sección de Diagnóstico.</li>
-						  <li>Sección de datos: Esta sección cuenta con un boton de envio de datos para empezar la terapia
-							  paliativa para tratar el Diagnóstico seleccionado y un boton de stop para deterner la terapia en caso de emergencia. </li>
+						  <li><strong>Sección de datos:</strong> Ésta sección cuenta con un boton de envio de datos para dar inicio a la tratamiento
+							  paliativo según la falencia y terapia seleccionados; tambien un boton de stop para deterner la terapia en caso de emergencia. </li>
 					  </ul>
 
 				  </div>

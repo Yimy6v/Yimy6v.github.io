@@ -1,8 +1,3 @@
-
-// 192.168.1.17
-// 192.168.0.100
-// var ip_url = 'http://192.168.0.134/';
-
 function prueba(){
 	var falencia = document.getElementById("selectFalencia").value;
 	var tratamiento = document.getElementById("selectTratamiento").value;
@@ -12,6 +7,7 @@ function prueba(){
 // Funcion para desplegar un mensaje de descripción de cada falencia
 function seleccionarFalencia(){
 	var falencia = document.getElementById("selectFalencia").value
+	document.getElementById("selectTratamiento").disabled = false
 
 	switch(falencia){
 		case "1":
@@ -41,40 +37,62 @@ function selecionarTratamiento(){
 		case "1":
 			if(tratamiento=='1'){
 				mensajeAlerta("Tratamiento 1", "Tratamiento falencia 1")
+				datosTerapia("Modo 1", "00:01:00 min", "Nivel 2", "37° Centigrados", "00:10:00 min")
 			}else{
 				mensajeAlerta("Tratamiento 2", "Tratamiento falencia 1")
+				datosTerapia("Modo 2", "00:01:00 min", "Nivel 2", "37° Centigrados", "00:10:00 min")
 			}
 			break;
 		case "2":
 			if(tratamiento=='1'){
 				mensajeAlerta("Tratamiento 1", "Tratamiento falencia 2")
+				datosTerapia("Modo 3", "00:01:00 min", "Nivel 2", "37° Centigrados", "00:10:00 min")
 			}else{
 				mensajeAlerta("Tratamiento 2", "Tratamiento falencia 2")
+				datosTerapia("Modo 4", "00:01:00 min", "Nivel 2", "37° Centigrados", "00:10:00 min")
 			}
 			break;
 		case "3":
 			if(tratamiento=='1'){
 				mensajeAlerta("Tratamiento 1", "Tratamiento falencia 3")
+				datosTerapia("Modo 5", "00:01:00 min", "Nivel 2", "37° Centigrados", "00:10:00 min")
 			}else{
 				mensajeAlerta("Tratamiento 2", "Tratamiento falencia 3")
+				datosTerapia("Modo 6", "00:01:00 min", "Nivel 2", "37° Centigrados", "00:10:00 min")
 			}
 			break;
 		case "4":
 			if(tratamiento=='1'){
 				mensajeAlerta("Tratamiento 1", "Tratamiento falencia 4")
+				datosTerapia("Modo 7", "00:01:00 min", "Nivel 2", "37° Centigrados", "00:10:00 min")
 			}else{
 				mensajeAlerta("Tratamiento 2", "Tratamiento falencia 4")
+				datosTerapia("Modo 8", "00:01:00 min", "Nivel 2", "37° Centigrados", "00:10:00 min")
 			}
 			break;
 		case "5":
 			if(tratamiento=='1'){
 				mensajeAlerta("Tratamiento 1", "Tratamiento falencia 5")
+				datosTerapia("Modo 9", "00:01:00 min", "Nivel 2", "37° Centigrados", "00:10:00 min")
 			}else{
 				mensajeAlerta("Tratamiento 2", "Tratamiento falencia 5")
+				datosTerapia("Modo 10", "00:01:00 min", "Nivel 2", "37° Centigrados", "00:10:00 min")
 			}
 			break;
 	}
 }
+
+
+// Función para llenar los campos de muestra de tratamiento
+function datosTerapia(modoOperacion, duracionOperacion, intensidad, temperatura, duracionTemperatura){
+	document.getElementById("modo").value = modoOperacion
+	document.getElementById("tiempoModo").value = duracionOperacion
+	document.getElementById("intensidad").value = intensidad
+	document.getElementById("temperatura").value = temperatura
+	document.getElementById("tiempoTemperatura").value = duracionTemperatura
+}
+
+
 
 // Funcion para enviar mensaje de alerta dependiendo su activación
 function mensajeAlerta(titulo, mensaje){
