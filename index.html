@@ -59,7 +59,7 @@
 				  <div class="card-header mt-1">Diagnóstico</div>
 				  <div class="card-body">
 					  <select id="selectFalencia" onchange="seleccionarFalencia()" class="form-select" aria-label="Default select example" style="margin-top: 0.2cm;">
-						  <option defaultSelected>Seleccione la falencia</option>
+						  <option value="nn" defaultSelected>Seleccione la falencia</option>
 						  <option value="1">Uno</option>
 						  <option value="2">Dos</option>
 						  <option value="3">Tres</option>
@@ -68,7 +68,7 @@
 					  </select>
 
 					  <select disabled id="selectTratamiento" class="form-select" onchange="selecionarTratamiento()" aria-label="Default select example" style="margin-top: 0.2cm;">
-						  <option defaultSelected>Seleccione el tipo de tratamiento</option>
+						  <option value="nn" defaultSelected>Seleccione el tipo de tratamiento</option>
 						  <option value="1">Uno</option>
 						  <option value="2">Dos</option>
 					  </select>
@@ -95,12 +95,12 @@
 					  <div class="row">
 						  <div class="col">
 							  <div class="d-grid gap-2 col-6 mx-auto" onclick="tomaDeDatos()">
-								  <a href="#" class="btn btn-danger">Enviar</a>
+								  <a href="#" class="btn btn-danger">Iniciar</a>
 							  </div>
 						  </div>
 						  <div class="col">
-							  <div class="d-grid gap-2 col-6 mx-auto">
-								  <a href="#" class="btn btn-danger">Stop</a>
+							  <div class="d-grid gap-2 col-6 mx-auto" onclick="paroEmergencia()">
+								  <a href="#" class="btn btn-danger">Detener</a>
 							  </div>
 						  </div>
 					  </div>
@@ -134,8 +134,8 @@
 						  <li><strong>Sección de temperatura:</strong> En esta sección se asignarán de manera automática los valores de
 							  temperatura y tiempo con los cuales la manta termica funcionará dependiendo de la falencia y tratamiento seleccionados
 							  en la sección de Diagnóstico.</li>
-						  <li><strong>Sección de datos:</strong> Ésta sección cuenta con un boton de envio de datos para dar inicio a la tratamiento
-							  paliativo según la falencia y terapia seleccionados; tambien un boton de stop para deterner la terapia en caso de emergencia. </li>
+						  <li><strong>Sección de datos:</strong> Ésta sección cuenta con un boton "Iniciar" para dar inicio a la tratamiento
+							  paliativo según la falencia y terapia seleccionados; tambien un boton "Detener" para deterner el funcionamiento del prototipo en caso de emergencia. </li>
 					  </ul>
 
 				  </div>

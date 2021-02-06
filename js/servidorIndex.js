@@ -93,7 +93,6 @@ function datosTerapia(modoOperacion, duracionOperacion, intensidad, temperatura,
 }
 
 
-
 // Funcion para enviar mensaje de alerta dependiendo su activación
 function mensajeAlerta(titulo, mensaje){
 	bootbox.dialog({ 
@@ -117,9 +116,29 @@ function tomaDeDatos() {
 	var falencia = document.getElementById("selectFalencia").value
 	var tratamiento = document.getElementById("selectTratamiento").value
 
-	envioDeDatos(ip_url, falencia+tratamiento)
-	console.log(falencia+tratamiento)
+	if(falencia != 'nn' && tratamiento != 'nn'){
+		envioDeDatos(ip_url, falencia+tratamiento)
+		console.log(falencia+tratamiento)
+	}else{
+		mensajeAlerta("Error !!!", "Debe seleccionar una falencia y un tratamiento.")
+	}
 }
+
+// funcion para mostrar un temporizador de timpo de modo
+var a = 0;
+function timerModo(){
+	a = a + 1;
+	console.log(a)
+	//document.getElementById("tiempoModo").value = '00:'+a+':00 min' 
+	setTimeout(timerModo(), 10000);
+}
+
+
+// Paro de emergencia
+function paroEmergencia(){
+	envioDeDatos('http://192.168.43.86/', '66');
+}
+
 
 // Envia los datos al ESP8266
 function envioDeDatos(ip_url, dato) {  // eviar datos servidor
