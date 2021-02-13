@@ -11,24 +11,40 @@ function seleccionarFalencia(){
 
 	switch(falencia){
 		case "1":
-			mensajeAlerta("Falencia 1", "Descripcion falencia 1")
+			mensajeAlerta("Debilidad muscular Cervical",
+				"La debilidad muscular cervical es lo que le supone al paciente una \
+				sensación de inestabilidad, como si le costase mantener la cabeza."
+			)
 			break;
 		case "2":
-			mensajeAlerta("Falencia 2", "Descripcion falencia 2")
+			mensajeAlerta("Torticulis",
+				"Es la distonía cervical más común, la contracción de los músculos \
+				del cuello hace que éste se desvíe de su posición normal y cause dolor."
+			)
 			break;
 		case "3":
-			mensajeAlerta("Falencia 3", "Descripcion falencia 3")
+			mensajeAlerta("Estrés", 
+				"La tensión muscular por estrés se ha asociado con el dolor de cabeza \
+				tensional, aunque también causa dolores musculares crónicos, contracturas e incluso espasmos musculares."
+			)
 			break;
 		case "4":
-			mensajeAlerta("Falencia 4", "Descripcion falencia 4")
+			mensajeAlerta("Hiperextensión Cervical", 
+				"Es una lesión del cuello por un movimiento excesivo que se produce \
+				en la columna cervical a alta velocidad a causa de un traumatismo repentino."
+			)
 			break;
 		case "5":
-			mensajeAlerta("Falencia 5", "Descripcion falencia 5")
+			mensajeAlerta("Cervicalgia por Factor Mecánico", 
+				"La cervicalgia mecánica es la forma más frecuente de dolor cervical. \
+				Los malos hábitos posturales constituyen los principales factores desencadenantes de cuadros de cervicalgia mecánica aguda."
+			)
 			break;
 	}
 }
 
 // Funcion para desplegar un mensaje de descripción de cada Tratamiento
+// variables tratamiento
 function selecionarTratamiento(){
 	var falencia = document.getElementById("selectFalencia").value
 	var tratamiento = document.getElementById("selectTratamiento").value
@@ -36,46 +52,46 @@ function selecionarTratamiento(){
 	switch(falencia){
 		case "1":
 			if(tratamiento=='1'){
-				mensajeAlerta("Tratamiento 1", "Tratamiento falencia 1")
+				mensajeAlerta("Tratamiento 1", falUnoTraUno)
 				datosTerapia("Modo 1", "00:01:00 min", "Nivel 2", "37° Centigrados", "00:10:00 min")
 			}else{
-				mensajeAlerta("Tratamiento 2", "Tratamiento falencia 1")
+				mensajeAlerta("Tratamiento 2", falUnoTraDos)
 				datosTerapia("Modo 2", "00:01:00 min", "Nivel 2", "37° Centigrados", "00:10:00 min")
 			}
 			break;
 		case "2":
 			if(tratamiento=='1'){
-				mensajeAlerta("Tratamiento 1", "Tratamiento falencia 2")
+				mensajeAlerta("Tratamiento Primario", falDosTraUno)
 				datosTerapia("Modo 3", "00:01:00 min", "Nivel 2", "37° Centigrados", "00:10:00 min")
 			}else{
-				mensajeAlerta("Tratamiento 2", "Tratamiento falencia 2")
+				mensajeAlerta("Tratamiento Secundario", falDosTraDos)
 				datosTerapia("Modo 4", "00:01:00 min", "Nivel 2", "37° Centigrados", "00:10:00 min")
 			}
 			break;
 		case "3":
 			if(tratamiento=='1'){
-				mensajeAlerta("Tratamiento 1", "Tratamiento falencia 3")
+				mensajeAlerta("Tratamiento Primario", falTresTraUno)
 				datosTerapia("Modo 5", "00:01:00 min", "Nivel 2", "37° Centigrados", "00:10:00 min")
 			}else{
-				mensajeAlerta("Tratamiento 2", "Tratamiento falencia 3")
+				mensajeAlerta("Tratamiento Secundario", falTresTraDos)
 				datosTerapia("Modo 6", "00:01:00 min", "Nivel 2", "37° Centigrados", "00:10:00 min")
 			}
 			break;
 		case "4":
 			if(tratamiento=='1'){
-				mensajeAlerta("Tratamiento 1", "Tratamiento falencia 4")
+				mensajeAlerta("Tratamiento Primario", falCuatroTraUno)
 				datosTerapia("Modo 7", "00:01:00 min", "Nivel 2", "37° Centigrados", "00:10:00 min")
 			}else{
-				mensajeAlerta("Tratamiento 2", "Tratamiento falencia 4")
+				mensajeAlerta("Tratamiento Secundario", falCuatroTraDos)
 				datosTerapia("Modo 8", "00:01:00 min", "Nivel 2", "37° Centigrados", "00:10:00 min")
 			}
 			break;
 		case "5":
 			if(tratamiento=='1'){
-				mensajeAlerta("Tratamiento 1", "Tratamiento falencia 5")
+				mensajeAlerta("Tratamiento Primario", falCincoTraUno)
 				datosTerapia("Modo 9", "00:01:00 min", "Nivel 2", "37° Centigrados", "00:10:00 min")
 			}else{
-				mensajeAlerta("Tratamiento 2", "Tratamiento falencia 5")
+				mensajeAlerta("Tratamiento Secundario", falCincoTraDos)
 				datosTerapia("Modo 10", "00:01:00 min", "Nivel 2", "37° Centigrados", "00:10:00 min")
 			}
 			break;
