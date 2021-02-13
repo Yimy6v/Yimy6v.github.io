@@ -1,7 +1,7 @@
 // Debilidad muscular Cervical --------------------------------------------------------------------------- 
 var falUnoTraUno = `
 <ol>
-	<li>Fase 1:
+	<li>Fase:
 		<ul>
 			<li>
 				Colocar almohadilla de calor durante 10 minutos a una temperatura de 40° Centigrados.
@@ -11,14 +11,14 @@ var falUnoTraUno = `
 			</li>
 		</ul>
 	</li>
-	<li>Fase 2:
+	<li>Fase:
 		<ul>
 			<li>
 				Realizar ejercicios propios del cuello (flexo-extensión, inclinación lateral y rotación derecha e izquierda) 3 series de 4 repeticiones.
 			</li>
 		</ul>
 	</li>
-	<li>Fase 3:
+	<li>Fase:
 		<ul> 
 			<li>
 				Realizar ejercicios de flexión y extensión, inclinación lateral derecha e izquierda del cuello, 2 series de 5 repeticiones, con una resistencia de 1.9 psi.
@@ -29,7 +29,7 @@ var falUnoTraUno = `
 `;
 var falUnoTraDos = `
 <ol>
-	<li>Fase 1:
+	<li>Fase:
 		<ul>
 			<li>
 				Colocar almohadilla de calor durante 5 minutos a una temperatura de 45° Centigrados.
@@ -39,14 +39,14 @@ var falUnoTraDos = `
 			</li>
 		</ul>
 	</li>
-	<li>Fase 2:
+	<li>Fase:
 		<ul>
 			<li>
 				Realizar ejercicios propios del cuello (flexo-extensión, inclinación lateral y rotación derecha e izquierda) 5 series de 3 repeticiones.
 			</li>
 		</ul>
 	</li>
-	<li>Fase 3:
+	<li>Fase:
 		<ul> 
 			<li>
 				Realizar ejercicios de flexión y extensión, inclinación lateral derecha e izquierda del cuello, 3 series de 3 repeticiones, con una resistencia de 4.8 psi.
@@ -59,14 +59,14 @@ var falUnoTraDos = `
 // Torticulis --------------------------------------------------------------------------- 
 var falDosTraUno = `
 <ol>
-	<li>Fase 1:
+	<li>Fase:
 		<ul>
 			<li>
 				Colocar paquete frió en la zona afectada durante 12 minutos , revisando cada 2 minutos el área para evitar quemaduras.
 			</li>
 		</ul>
 	</li>
-	<li>Fase 2:
+	<li>Fase:
 		<ul>
 			<li>
 				Colocar almohadilla de calor durante 5 minutos a una temperatura de 43° Centigrados.
@@ -76,7 +76,7 @@ var falDosTraUno = `
 			</li>
 		</ul>
 	</li>
-	<li>Fase 3:
+	<li>Fase:
 		<ul> 
 			<li>
 				Realizar ejercicios de inclinación lateral derecha e izquierda del cuello, 2 series de 5 repeticiones, con una resistencia de 2.3 psi.
@@ -87,14 +87,14 @@ var falDosTraUno = `
 `;
 var falDosTraDos = `
 <ol>
-	<li>Fase 1:
+	<li>Fase:
 		<ul>
 			<li>
 				Colocar paquete frió en la zona afectada durante 15 minutos , revisando cada 2 minutos el área para evitar quemaduras.
 			</li>
 		</ul>
 	</li>
-	<li>Fase 2:
+	<li>Fase:
 		<ul>
 			<li>
 				Colocar almohadilla de calor durante 6 minutos a una temperatura de 40° Centigrados.
@@ -104,7 +104,7 @@ var falDosTraDos = `
 			</li>
 		</ul>
 	</li>
-	<li>Fase 3:
+	<li>Fase:
 		<ul> 
 			<li>
 				Realizar ejercicios de flexión y extensión del cuello, 3 series de 4 repeticiones, con una resistencia de 2.9 psi.
@@ -117,14 +117,14 @@ var falDosTraDos = `
 // Estrés --------------------------------------------------------------------------- 
 var falTresTraUno = `
 <ol>
-	<li>Fase 1:
+	<li>Fase:
 		<ul>
 			<li>
 				Colocar paquete frió en la zona afectada durante 10 minutos , revisando cada 2 minutos el área para evitar quemaduras.
 			</li>
 		</ul>
 	</li>
-	<li>Fase 2:
+	<li>Fase:
 		<ul>
 			<li>
 				Colocar almohadilla de calor durante 3 minutos a una temperatura de 42° Centigrados.
@@ -134,7 +134,7 @@ var falTresTraUno = `
 			</li>
 		</ul>
 	</li>
-	<li>Fase 3:
+	<li>Fase:
 		<ul> 
 			<li>
 				Realizar ejercicios de flexión y extensión del cuello, 4 series de 4 repeticiones, con una resistencia de 4.8 psi.
@@ -145,14 +145,14 @@ var falTresTraUno = `
 `;
 var falTresTraDos = `
 <ol>
-	<li>Fase 1:
+	<li>Fase:
 		<ul>
 			<li>
 				Colocar paquete frió en la zona afectada durante 7 minutos , revisando cada 2 minutos el área para evitar quemaduras.
 			</li>
 		</ul>
 	</li>
-	<li>Fase 2:
+	<li>Fase:
 		<ul>
 			<li>
 				Colocar almohadilla de calor durante 10 minutos a una temperatura de 39° Centigrados.
@@ -162,7 +162,7 @@ var falTresTraDos = `
 			</li>
 		</ul>
 	</li>
-	<li>Fase 3:
+	<li>Fase:
 		<ul> 
 			<li>
 				Realizar ejercicios de inclinación lateral derecha e izquierda, 3 series de  6 repeticiones, con una resistencia de 2.3 psi.
@@ -175,14 +175,14 @@ var falTresTraDos = `
 // Hiperextensión Cervical --------------------------------------------------------------------------- 
 var falCuatroTraUno = `
 <ol>
-	<li>Fase 1:
+	<li>Fase:
 		<ul>
 			<li>
 				Colocar paquete frió en la zona afectada durante 15 minutos , revisando cada 2 minutos el área para evitar quemaduras.
 			</li>
 		</ul>
 	</li>
-	<li>Fase 2:
+	<li>Fase:
 		<ul>
 			<li>
 				Colocar almohadilla de calor durante 4 minutos a una temperatura de 45° Centigrados.
@@ -192,7 +192,7 @@ var falCuatroTraUno = `
 			</li>
 		</ul>
 	</li>
-	<li>Fase 3:
+	<li>Fase:
 		<ul> 
 			<li>
 				Realizar ejercicios de inclinación lateral derecha e izquierda del cuello, 5 series de 4 repeticiones, con una resistencia de 1.9 psi.
@@ -203,14 +203,14 @@ var falCuatroTraUno = `
 `;
 var falCuatroTraDos = `
 <ol>
-	<li>Fase 1:
+	<li>Fase:
 		<ul>
 			<li>
 				Colocar paquete frió en la zona afectada durante 5 minutos , revisando cada 2 minutos el área para evitar quemaduras.
 			</li>
 		</ul>
 	</li>
-	<li>Fase 2:
+	<li>Fase:
 		<ul>
 			<li>
 				Colocar almohadilla de calor durante 8 minutos a una temperatura de 39° Centigrados.
@@ -220,7 +220,7 @@ var falCuatroTraDos = `
 			</li>
 		</ul>
 	</li>
-	<li>Fase 3:
+	<li>Fase:
 		<ul> 
 			<li>
 				Realizar ejercicios de flexión y extensión del cuello, 2 series de 7 repeticiones, con una resistencia de 3.8 psi.
@@ -233,14 +233,14 @@ var falCuatroTraDos = `
 // Cervicalgia por Factor Mecánico --------------------------------------------------------------------------- 
 var falCincoTraUno = `
 <ol>
-	<li>Fase 1:
+	<li>Fase:
 		<ul>
 			<li>
 				Colocar paquete frió en la zona afectada durante 10 minutos , revisando cada 2 minutos el área para evitar quemaduras.
 			</li>
 		</ul>
 	</li>
-	<li>Fase 2:
+	<li>Fase:
 		<ul>
 			<li>
 				Colocar almohadilla de calor durante 5 minutos a una temperatura de 38° Centigrados.
@@ -250,7 +250,7 @@ var falCincoTraUno = `
 			</li>
 		</ul>
 	</li>
-	<li>Fase 3:
+	<li>Fase:
 		<ul> 
 			<li>
 				Realizar ejercicios de flexión y extensión del cuello, 3 series de 5 repeticiones, con una resistencia de 2.9 psi.
@@ -261,14 +261,14 @@ var falCincoTraUno = `
 `;
 var falCincoTraDos = `
 <ol>
-	<li>Fase 1:
+	<li>Fase:
 		<ul>
 			<li>
 				Colocar paquete frió en la zona afectada durante 15 minutos , revisando cada 2 minutos el área para evitar quemaduras.
 			</li>
 		</ul>
 	</li>
-	<li>Fase 2:
+	<li>Fase:
 		<ul>
 			<li>
 				Colocar almohadilla de calor durante 10 minutos a una temperatura de 43° Centigrados.
@@ -278,7 +278,7 @@ var falCincoTraDos = `
 			</li>
 		</ul>
 	</li>
-	<li>Fase 3:
+	<li>Fase:
 		<ul> 
 			<li>
 				Realizar ejercicios de inclinación lateral derecha e izquierda del cuello, 3 series de 8 repeticiones, con una resistencia de 1.9 psi.
