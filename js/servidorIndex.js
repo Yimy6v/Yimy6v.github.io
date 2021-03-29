@@ -134,7 +134,6 @@ function tomaDeDatos() {
 
 	if(falencia != 'nn' && tratamiento != 'nn'){
 		envioDeDatos(ip_url, falencia+tratamiento)
-		console.log(falencia+tratamiento)
 	}else{
 		mensajeAlerta("Error !!!", "Debe seleccionar una falencia y un tratamiento.")
 	}
@@ -152,12 +151,14 @@ function timerModo(){
 
 // Paro de emergencia
 function paroEmergencia(){
-	envioDeDatos('http://192.168.43.86/', '66');
+	var ip_url = 'http://192.168.43.86/';
+	envioDeDatos(ip_url, 66);
 }
 
 
 // Envia los datos al ESP8266
 function envioDeDatos(ip_url, dato) {  // eviar datos servidor
+	console.log(ip_url+dato);
 	var xhttp = new XMLHttpRequest();
 	xhttp.open("GET", ip_url + dato, true);
 	if (xhttp.send()) {

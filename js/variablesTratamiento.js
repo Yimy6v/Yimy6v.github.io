@@ -4,7 +4,8 @@ var falUnoTraUno = `
 	<li>Fase:
 		<ul>
 			<li>
-				Colocar almohadilla de calor durante 10 minutos a una temperatura de 40° Centígrados, revisando cada 2 minutos el área para evitar quemaduras.
+				Colocar almohadilla de calor durante 10 minutos a una temperatura de 40° Centígrados, revisando 
+				cada 2 minutos el área para evitar quemaduras.
 			</li>
 			<li>
 				Colocar el Tens en modo Acupuntura (1) con una intensidad de 5 y una duración de 10 minutos.
@@ -21,7 +22,8 @@ var falUnoTraUno = `
 	<li>Fase:
 		<ul> 
 			<li>
-				Realizar ejercicios de flexión y extensión, inclinación lateral derecha e izquierda del cuello, 2 series de 5 repeticiones, con una resistencia de 1.9 psi.
+				Realizar ejercicios de flexión y extensión, inclinación lateral derecha e izquierda del cuello, 2 series de 5 
+				repeticiones, con una resistencia de 1.9 psi. (100 mmHg)
 			</li>
 		</ul>
 	</li>
@@ -32,7 +34,8 @@ var falUnoTraDos = `
 	<li>Fase:
 		<ul>
 			<li>
-				Colocar almohadilla de calor durante 5 minutos a una temperatura de 45° Centígrados, revisando cada 2 minutos el área para evitar quemaduras.
+				Colocar almohadilla de calor durante 10 minutos a una temperatura de 45° Centígrados, revisando cada 
+				2 minutos el área para evitar quemaduras.
 			</li>
 			<li>
 				Colocar el Tens en modo Manipulation (5) con una intensidad de 4 y una duración de 15 minutos.
@@ -42,21 +45,23 @@ var falUnoTraDos = `
 	<li>Fase:
 		<ul>
 			<li>
-				Realizar ejercicios propios del cuello (flexo-extensión, inclinación lateral y rotación derecha e izquierda) 5 series de 3 repeticiones.
+				Realizar ejercicios propios del cuello (flexo-extensión, inclinación lateral y rotación derecha e izquierda)
+				 5 series de 3 repeticiones.
 			</li>
 		</ul>
 	</li>
 	<li>Fase:
 		<ul> 
 			<li>
-				Realizar ejercicios de flexión y extensión, inclinación lateral derecha e izquierda del cuello, 3 series de 3 repeticiones, con una resistencia de 4.8 psi.
+				Realizar ejercicios de flexión y extensión, inclinación lateral derecha e izquierda del cuello, 3 series de 
+				3 repeticiones, con una resistencia de 4.8 psi.(150 mmHg)
 			</li>
 		</ul>
 	</li>
 </ol>
 `;
 
-// Torticulis --------------------------------------------------------------------------- 
+// Torticolis --------------------------------------------------------------------------- 
 var falDosTraUno = `
 <ol>
 	<li>Fase:
@@ -69,7 +74,8 @@ var falDosTraUno = `
 	<li>Fase:
 		<ul>
 			<li>
-				Colocar almohadilla de calor durante 5 minutos a una temperatura de 43° Centígrados, revisando cada 2 minutos el área para evitar quemaduras.
+				Colocar almohadilla de calor durante 10 minutos a una temperatura de 43° Centígrados, revisando cada 2 minutos el 
+				área para evitar quemaduras.
 			</li>
 			<li>
 				Colocar el Tens en modo Massage (3) con una intensidad de 4 y una duración de 10 minutos.
@@ -79,7 +85,8 @@ var falDosTraUno = `
 	<li>Fase:
 		<ul> 
 			<li>
-				Realizar ejercicios de inclinación lateral derecha e izquierda del cuello, 2 series de 5 repeticiones, con una resistencia de 2.3 psi.
+				Realizar ejercicios de inclinación lateral derecha e izquierda del cuello, 2 series de 5 repeticiones, 
+				con una resistencia de 2.3 psi.(120 mmHg)
 			</li>
 		</ul>
 	</li>
@@ -97,7 +104,8 @@ var falDosTraDos = `
 	<li>Fase:
 		<ul>
 			<li>
-				Colocar almohadilla de calor durante 6 minutos a una temperatura de 40° Centígrados, revisando cada 2 minutos el área para evitar quemaduras.
+				Colocar almohadilla de calor durante 15 minutos a una temperatura de 40° Centígrados, revisando cada 2 minutos el 
+				área para evitar quemaduras.
 			</li>
 			<li>
 				Colocar el Tens en modo Cupping (4) con una intensidad de 6 y una duración de 5 minutos.
@@ -107,7 +115,7 @@ var falDosTraDos = `
 	<li>Fase:
 		<ul> 
 			<li>
-				Realizar ejercicios de flexión y extensión del cuello, 3 series de 4 repeticiones, con una resistencia de 2.9 psi.
+				Realizar ejercicios de flexión y extensión del cuello, 3 series de 4 repeticiones, con una resistencia de 2.9 psi.(150 mmHg)
 			</li>
 		</ul>
 	</li>
@@ -127,7 +135,8 @@ var falTresTraUno = `
 	<li>Fase:
 		<ul>
 			<li>
-				Colocar almohadilla de calor durante 3 minutos a una temperatura de 42° Centígrados, revisando cada 2 minutos el área para evitar quemaduras.
+				Colocar almohadilla de calor durante 10 minutos a una temperatura de 42° Centígrados, revisando cada 2 minutos el 
+				área para evitar quemaduras.
 			</li>
 			<li>
 				Colocar el Tens en modo Acupuntura (1) con una intensidad de 6 y una duración de 5 minutos.
@@ -137,7 +146,7 @@ var falTresTraUno = `
 	<li>Fase:
 		<ul> 
 			<li>
-				Realizar ejercicios de flexión y extensión del cuello, 4 series de 4 repeticiones, con una resistencia de 4.8 psi.
+				Realizar ejercicios de flexión y extensión del cuello, 4 series de 4 repeticiones, con una resistencia de 4.8 psi.(250 mmHg)
 			</li>
 		</ul>
 	</li>
@@ -155,7 +164,8 @@ var falTresTraDos = `
 	<li>Fase:
 		<ul>
 			<li>
-				Colocar almohadilla de calor durante 10 minutos a una temperatura de 39° Centígrados, revisando cada 2 minutos el área para evitar quemaduras.
+				Colocar almohadilla de calor durante 14 minutos a una temperatura de 39° Centígrados, revisando cada 2 minutos el 
+				área para evitar quemaduras.
 			</li>
 			<li>
 				Colocar el Tens en modo Acupuntura (1) con una intensidad de 3 y una duración de 15 minutos.
@@ -165,7 +175,8 @@ var falTresTraDos = `
 	<li>Fase:
 		<ul> 
 			<li>
-				Realizar ejercicios de inclinación lateral derecha e izquierda, 3 series de  6 repeticiones, con una resistencia de 2.3 psi.
+				Realizar ejercicios de inclinación lateral derecha e izquierda, 3 series de  6 repeticiones, con una resistencia 
+				de 2.3 psi.(120 mmHg)
 			</li>
 		</ul>
 	</li>
@@ -185,7 +196,8 @@ var falCuatroTraUno = `
 	<li>Fase:
 		<ul>
 			<li>
-				Colocar almohadilla de calor durante 4 minutos a una temperatura de 45° Centígrados, revisando cada 2 minutos el área para evitar quemaduras.
+				Colocar almohadilla de calor durante 15 minutos a una temperatura de 45° Centígrados, revisando cada 2 minutos el 
+				área para evitar quemaduras.
 			</li>
 			<li>
 				Colocar el Tens en modo Acupuntura (1) con una intensidad de 5 y una duración de 15 minutos.
@@ -195,7 +207,8 @@ var falCuatroTraUno = `
 	<li>Fase:
 		<ul> 
 			<li>
-				Realizar ejercicios de inclinación lateral derecha e izquierda del cuello, 5 series de 4 repeticiones, con una resistencia de 1.9 psi.
+				Realizar ejercicios de inclinación lateral derecha e izquierda del cuello, 5 series de 4 repeticiones, con una 
+				resistencia de 1.9 psi.(100 mmHg)
 			</li>
 		</ul>
 	</li>
@@ -213,7 +226,8 @@ var falCuatroTraDos = `
 	<li>Fase:
 		<ul>
 			<li>
-				Colocar almohadilla de calor durante 8 minutos a una temperatura de 39° Centígrados, revisando cada 2 minutos el área para evitar quemaduras.
+				Colocar almohadilla de calor durante 12 minutos a una temperatura de 39° Centígrados, revisando cada 2 minutos el 
+				área para evitar quemaduras.
 			</li>
 			<li>
 				Colocar el Tens en modo Massage (3) con una intensidad de 5 y una duración de 5 minutos
@@ -223,7 +237,7 @@ var falCuatroTraDos = `
 	<li>Fase:
 		<ul> 
 			<li>
-				Realizar ejercicios de flexión y extensión del cuello, 2 series de 7 repeticiones, con una resistencia de 3.8 psi.
+				Realizar ejercicios de flexión y extensión del cuello, 2 series de 7 repeticiones, con una resistencia de 3.8 psi.(200 mmHg)
 			</li>
 		</ul>
 	</li>
@@ -243,7 +257,8 @@ var falCincoTraUno = `
 	<li>Fase:
 		<ul>
 			<li>
-				Colocar almohadilla de calor durante 5 minutos a una temperatura de 38° Centígrados, revisando cada 2 minutos el área para evitar quemaduras.
+				Colocar almohadilla de calor durante 15 minutos a una temperatura de 38° Centígrados, revisando cada 2 minutos el 
+				área para evitar quemaduras.
 			</li>
 			<li>
 				Colocar el Tens en modo Stroke (2) con una intensidad de 5 y una duración de 10 minutos.
@@ -253,7 +268,7 @@ var falCincoTraUno = `
 	<li>Fase:
 		<ul> 
 			<li>
-				Realizar ejercicios de flexión y extensión del cuello, 3 series de 5 repeticiones, con una resistencia de 2.9 psi.
+				Realizar ejercicios de flexión y extensión del cuello, 3 series de 5 repeticiones, con una resistencia de 2.9 psi.(150 mmHg)
 			</li>
 		</ul>
 	</li>
@@ -271,7 +286,8 @@ var falCincoTraDos = `
 	<li>Fase:
 		<ul>
 			<li>
-				Colocar almohadilla de calor durante 10 minutos a una temperatura de 43° Centígrados, revisando cada 2 minutos el área para evitar quemaduras.
+				Colocar almohadilla de calor durante 10 minutos a una temperatura de 43° Centígrados, revisando cada 2 minutos el 
+				área para evitar quemaduras.
 			</li>
 			<li>
 				Colocar el Tens en modo Manipulation (5) con una intensidad de 6 y una duración de 5 minutos.
@@ -281,7 +297,8 @@ var falCincoTraDos = `
 	<li>Fase:
 		<ul> 
 			<li>
-				Realizar ejercicios de inclinación lateral derecha e izquierda del cuello, 3 series de 8 repeticiones, con una resistencia de 1.9 psi.
+				Realizar ejercicios de inclinación lateral derecha e izquierda del cuello, 3 series de 8 repeticiones, con una 
+				resistencia de 1.9 psi.(100 mmHg)
 			</li>
 		</ul>
 	</li>
