@@ -56,40 +56,40 @@ function selecionarTratamiento(){
 				datosTerapia("Acupuntura", "00:10:00 min", "Intensidad 5", "40° Centigrados", "00:10:00 min")
 			}else{
 				mensajeAlerta("Tratamiento 2", falUnoTraDos)
-				datosTerapia("Manipulation", "00:15:00 min", "Intensidad 4", "45° Centigrados", "00:05:00 min")
+				datosTerapia("Manipulation", "00:15:00 min", "Intensidad 4", "45° Centigrados", "00:10:00 min")
 			}
 			break;
 		case "2":
 			if(tratamiento=='1'){
 				mensajeAlerta("Tratamiento Primario", falDosTraUno)
-				datosTerapia("Massage", "00:10:00 min", "Intensidad 4", "43° Centigrados", "00:05:00 min")
+				datosTerapia("Massage", "00:10:00 min", "Intensidad 4", "43° Centigrados", "00:10:00 min")
 			}else{
 				mensajeAlerta("Tratamiento Secundario", falDosTraDos)
-				datosTerapia("Cupping", "00:05:00 min", "Intensidad 6", "40° Centigrados", "00:06:00 min")
+				datosTerapia("Cupping", "00:05:00 min", "Intensidad 6", "40° Centigrados", "00:15:00 min")
 			}
 			break;
 		case "3":
 			if(tratamiento=='1'){
 				mensajeAlerta("Tratamiento Primario", falTresTraUno)
-				datosTerapia("Acupuntura", "00:05:00 min", "Intensidad 6", "42° Centigrados", "00:03:00 min")
+				datosTerapia("Acupuntura", "00:05:00 min", "Intensidad 6", "42° Centigrados", "00:10:00 min")
 			}else{
 				mensajeAlerta("Tratamiento Secundario", falTresTraDos)
-				datosTerapia("Acupuntura", "00:15:00 min", "Intensidad 3", "39° Centigrados", "00:10:00 min")
+				datosTerapia("Acupuntura", "00:15:00 min", "Intensidad 3", "39° Centigrados", "00:14:00 min")
 			}
 			break;
 		case "4":
 			if(tratamiento=='1'){
 				mensajeAlerta("Tratamiento Primario", falCuatroTraUno)
-				datosTerapia("Acupuntura", "00:15:00 min", "Intensidad 5", "45° Centigrados", "00:04:00 min")
+				datosTerapia("Acupuntura", "00:15:00 min", "Intensidad 5", "45° Centigrados", "00:15:00 min")
 			}else{
 				mensajeAlerta("Tratamiento Secundario", falCuatroTraDos)
-				datosTerapia("Massage", "00:05:00 min", "Intensidad 5", "39° Centigrados", "00:08:00 min")
+				datosTerapia("Massage", "00:05:00 min", "Intensidad 5", "39° Centigrados", "00:12:00 min")
 			}
 			break;
 		case "5":
 			if(tratamiento=='1'){
 				mensajeAlerta("Tratamiento Primario", falCincoTraUno)
-				datosTerapia("Stroke", "00:10:00 min", "Intensidad 5", "38° Centigrados", "00:05:00 min")
+				datosTerapia("Stroke", "00:10:00 min", "Intensidad 5", "38° Centigrados", "00:15:00 min")
 			}else{
 				mensajeAlerta("Tratamiento Secundario", falCincoTraDos)
 				datosTerapia("Manipulation", "00:05:00 min", "Intensidad 6", "43° Centigrados", "00:10:00 min")
